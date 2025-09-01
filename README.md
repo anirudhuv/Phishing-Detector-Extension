@@ -2,7 +2,7 @@
 
 Chrome Extension that automatically detects phishing links using AI-powered analysis. Shows visual safety indicators (✅/❌) next to links on web pages and search results.
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Installation
 1. **Start Flask API:**
@@ -10,6 +10,7 @@ Chrome Extension that automatically detects phishing links using AI-powered anal
    pip install flask flask-cors
    python app.py
    ```
+   **Train model with data or use newmodel.pkl**
 
 2. **Load Extension:**
    - Open `chrome://extensions/`
@@ -21,7 +22,7 @@ Chrome Extension that automatically detects phishing links using AI-powered anal
 - **Manual**: Click extension icon to check specific URLs
 - **Visual**: ✅ = Safe, ❌ = Potentially unsafe
 
-## 📁 Files
+## Files
 
 ```
 ├── chrome-extension/
@@ -37,7 +38,7 @@ Chrome Extension that automatically detects phishing links using AI-powered anal
     └── feature.py
 ```
 
-## 🔧 API Format
+##  API Format
 
 **Request:**
 ```json
@@ -53,20 +54,16 @@ Chrome Extension that automatically detects phishing links using AI-powered anal
 }
 ```
 
-## 🎯 Features
+## Features
 
 - **Search Result Protection**: Automatically scans Google/Bing search results
 - **Batch Processing**: Sends 5 URLs per API request for efficiency  
 - **Real-time Detection**: Monitors new links added to pages
 - **Privacy Focused**: All processing done locally via your Flask API
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 1. **Check Flask API**: Ensure running at `http://127.0.0.1:5000`
 2. **Console Logs**: Press F12 → Look for `🔧` debug messages
 3. **CORS Issues**: Add `CORS(app)` to your Flask code
 4. **Extension Errors**: Check `chrome://extensions/` for red error messages
-
-## 📄 License
-
-MIT License - Open source security tool for phishing protection.
